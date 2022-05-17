@@ -97,13 +97,13 @@
             </style>
         <script async src='/cdn-cgi/bm/cv/669835187/api.js'></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+        <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+         
         {{-- <script src="html2pdf.bundle.min.js"></script> --}}
 
 
         <script>
             function calc()
-            // document.addEventListener('DOMContentLoaded', function(event) { document.getsElementById('foo').value = 'bar';});
 
                 {
                     
@@ -160,16 +160,16 @@
 
                     var total_jakat_result = ((total_jakat_asset+total_business_jakat_asset)-tota_subtract_result)*0.025;
 
-                    document.getElementById('jakat_asset_result').value = total_jakat_asset;
-                    document.getElementById('final_jakat_asset_result').value = total_jakat_asset;
+                    document.getElementById('jakat_asset_result').innerHTML = total_jakat_asset;
+                    document.getElementById('final_jakat_asset_result').innerHTML = total_jakat_asset;
 
-                    document.getElementById('business_result').value = total_business_jakat_asset;
-                    document.getElementById('final_business_result').value = total_business_jakat_asset;
+                    document.getElementById('business_result').innerHTML = total_business_jakat_asset;
+                    document.getElementById('final_business_result').innerHTML = total_business_jakat_asset;
                     
-                    document.getElementById('subtract_result').value = tota_subtract_result;
-                    document.getElementById('final_subtract_result').value = tota_subtract_result;
+                    document.getElementById('subtract_result').innerHTML = tota_subtract_result;
+                    document.getElementById('final_subtract_result').innerHTML = tota_subtract_result;
 
-                    document.getElementById('final_jakat_result').value = total_jakat_result;
+                    document.getElementById('final_jakat_result').innerHTML = total_jakat_result;
 
 
                     
@@ -183,9 +183,16 @@
 
             }
 
-            (function print() {
-                print();
-            })();
+            function pdf() {
+                
+                // var main_body = document.getElementById('main_body').innerHTML;
+                // var fast_form= document.getElementById('first_form').innerHTML;
+                // var selectforms= document.getElementById('selectforms').innerHTML;
+                // var form_two= document.getElementById('form_two').innerHTML;
+                // var form_three = document.getElementById("form_three").innerHTML;
+                // document.getElementById('main_body').innerHTML = fast_form + selectforms+form_two+form_three;
+                window.print();
+            };
 
             // function print()
             // {
@@ -210,15 +217,14 @@
             //     // html2pdf().from(download).set(options).save();
             // }
         
-        
         </script>
     
     </head>
-    <body>
+    <body id="main_body">
         <section class="tag-page-area pt-3">
-            <div class="container" id="pdf_convert">
+            <div class="container">
                 <div class="row justify-content-center py-3">
-                    <div class="col-md-10">
+                    <div class="col-md-12">
                         <div class="jakat-title text-left">
                             <h1>যাকাত ক্যালকুলেটর</h1>
                         </div>
@@ -230,8 +236,8 @@
                 <div class="row justify-content-center mb-3">
                     <div class="col-md-12 ">
                         
-                        <div class="jakat-body-input text-center p-3 d-flex" id="real" >
-                            <label class="label-front col-md-4"><b>যাকাত প্রদানকারীর নাম:</b></label>
+                        <div class="jakat-body-input text-center p-3 d-flex" id="first_form" >
+                            <label class="label-front col-md-4"><b>যাকাত প্রদানকারীর নাম:</b></p></label>
                             <input class="input-type p-0 mr-5" type="text">
                         </div>
 
@@ -242,109 +248,117 @@
 
                                     <form  id="selectforms">
                                         <div class=" d-flex justify-content-start py-3">
-                                            <label class="jakat-box col-md-6 text-right">নিসাব পরিমাণ:</label>
-                                            <label class="jakat-box-two text-center"><b>83000</b></label>
+                                            <label class="jakat-box col-md-6 text-right"><p class="text_center">নিসাব পরিমাণ:</p></p></label>
+                                            <label class="jakat-box-two text-center"><p class="text_center_two">83000</p></label>
                                         </div>
 
                                         <h5 class="text-left label-front">সম্পদ</h5> <hr class="hr-color">
 
                                         <div class=" d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">স্বর্ণের মূল্য:</label>
+                                            <label class=" jakat-box col-md-6 text-right"> <p class="text_center">স্বর্ণের মূল্য:</p></label>
                                             <input class="input-text text-center" id="gold" type="text">
                                         </div>
                                         <div class=" d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">রূপার মূল্য:</label>
+                                            <label class=" jakat-box  col-md-6 text-right"> <p class="text_center">রূপার মূল্য:</p></label>
                                             <input  class="input-text text-center" id="rupa_price" type="text">
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">নগদ টাকা:</label>
+                                            <label class=" jakat-box col-md-6 text-right"> <p class="text_center">নগদ টাকা:</p></label>
                                             <input  class="input-text text-center"  id="nagad_money" type="text">
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">কারো কাছে গচ্ছিত আমানত</label>
+                                            <label class=" jakat-box col-md-6 text-right"> <p class="text_center">কারো কাছে গচ্ছিত আমানত</p></label>
                                             <input  class="input-text text-center" id="my_asset_others" type="text">  
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">অন্যের কাছে পাওনা টাকা ⓘ</label>
-                                            <input  class="input-text text-center" id="my_asset_others_lone" type="text">  
+                                            <label class=" jakat-box info col-md-6 text-right" data-hover="অন্যের কাছে পাওনা টাকা অন্যের কাছে পাওনা টাকাঅন্যের কাছে পাওনা টাকাঅন্যের কাছে পাওনা টাকাঅন্যের কাছে পাওনা টাকা"> অন্যের কাছে পাওনা টাকা 
+                                                <i class="fa fa-info-circle" ></i>
+                                            </p></label>
+                                            <input  class="input-text text-center" id="my_asset_others_lone" type="text"> 
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">ফেরৎযোগ্য সিকিউরিটি মানি ⓘ</label>
+                                            <label class=" jakat-box col-md-6 text-right"> <p class="text_center">ফেরৎযোগ্য সিকিউরিটি মানি 
+                                                <i class="fa fa-info-circle" ></i>
+                                            </p></label>
                                             <input  class="input-text text-center" id="security_money" type="text">  
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">বৈদেশিক মুদ্রা ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"> <p class="text_center">বৈদেশিক মুদ্রা 
+                                                <i class="fa fa-info-circle" ></i>
+                                            </p></label>
                                             <input  class="input-text text-center" id="forign_money" type="text">  
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">ব্যাংক একাউন্টে জমাকৃত টাকা ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"><p class="text_center">ব্যাংক একাউন্টে জমাকৃত টাকা 
+                                                <i class="fa fa-info-circle" ></i>
+                                            </p></label>
                                             <input  class="input-text text-center" id="bank_money" type="text"> 
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">বিশেষ উদ্দেশ্যে জমা টাকা ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"><p class="text_center">বিশেষ উদ্দেশ্যে জমা টাকা <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="special_money" type="text">  
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">স্যালারি একাউন্টে জমা টাকা ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"><p class="text_center">স্যালারি একাউন্টে জমা টাকা <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="selary_money" type="text">  
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">ব্যাংক গ্যারান্টি মানি ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"><p class="text_center">ব্যাংক গ্যারান্টি মানি <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="bank_money_geranty" type="text">  
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">বীমায় জমাকৃত প্রিমিয়াম ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"><p class="text_center">বীমায় জমাকৃত প্রিমিয়াম <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="bima_money" type="text">  
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">বন্ড, ট্রেজারী বিল, সঞ্চয়পত্র ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"><p class="text_center">বন্ড, ট্রেজারী বিল, সঞ্চয়পত্র <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="bond_money" type="text">  
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">প্রভিডেন্ট ফান্ড ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"><p class="text_center">প্রভিডেন্ট ফান্ড <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="provident_fund" type="text">  
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">কোম্পানির শেয়ার (ডিভিডেন্ট) ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"><p class="text_center">কোম্পানির শেয়ার (ডিভিডেন্ট) <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="company_share" type="text">  
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">কোম্পানির শেয়ার (ক্যাপিটাল গেইন) ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"><p class="text_center">কোম্পানির শেয়ার (ক্যাপিটাল গেইন) <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="company_share_capital" type="text">  
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">সমিতিতে সঞ্চিত নগদ টাকা ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"><p class="text_center">সমিতিতে সঞ্চিত নগদ টাকা <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="some_shonchoy_money" type="text">  
                                         </div>
                                         
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">ব্যবসায় বিনিয়োগকৃত টাকা ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"><p class="text_center">ব্যবসায় বিনিয়োগকৃত টাকা <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="invest_money" type="text">  
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">ব্যবসায়িক পণ্যের বকেয়া মূল্য ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"><p class="text_center">ব্যবসায়িক পণ্যের বকেয়া মূল্য <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="lone_money" type="text">  
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3" >
-                                            <label class=" text-right col-md-6 label-front"><b>মোট:</b></label>
-                                            <input class="input-front-result text-left col-md-6" id="jakat_asset_result">
+                                            <label class=" text-right col-md-6 label-front"><b>মোট:</b></p></label>
+                                            <label class="input-front-result text-left col-md-6" id="jakat_asset_result"></p></label>
                                         </div>
                                     
 
@@ -352,43 +366,43 @@
 
                                     
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">ব্যবসার উদ্দেশ্যে ক্রয়কৃত জমি ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"><p class="text_center">ব্যবসার উদ্দেশ্যে ক্রয়কৃত জমি <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="business_property" type="text">  
                                         </div>
     
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">ব্যবসার উদ্দেশ্যে ক্রয়কৃত ফ্ল্যাট, বাড়ি ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"><p class="text_center">ব্যবসার উদ্দেশ্যে ক্রয়কৃত ফ্ল্যাট, বাড়ি <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="business_house" type="text">  
                                         </div>
     
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">ব্যবসার গাড়ি ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"> <p class="text_center"> ব্যবসার গাড়ি <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="business_car" type="text">  
                                         </div>
     
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">কোম্পানির বিক্রয়যোগ্য ব্যবসায়িক পণ্য</label>
+                                            <label class=" jakat-box col-md-6 text-right"> <p class="text_center">কোম্পানির বিক্রয়যোগ্য ব্যবসায়িক পণ্য</p></label>
                                             <input  class="input-text text-center" id="company_business" type="text">  
                                         </div>
     
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">সকল ব্যবসার বিক্রয়যোগ্য পণ্য</label>
+                                            <label class=" jakat-box col-md-6 text-right"> <p class="text_center">সকল ব্যবসার বিক্রয়যোগ্য পণ্য</p></label>
                                             <input  class="input-text text-center" id="all_business_sell" type="text">  
                                         </div>
     
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">ব্যবসায়িক পণ্য তৈরির মজুদ কাঁচামাল</label>
+                                            <label class=" jakat-box col-md-6 text-right"> <p class="text_center">ব্যবসায়িক পণ্য তৈরির মজুদ কাঁচামাল</p></label>
                                             <input  class="input-text text-center" id="business_raw_products" type="text">  
                                         </div>
     
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">ব্যবসার জন্য ক্রয়কৃত পশু-প্রাণী</label>
+                                            <label class=" jakat-box col-md-6 text-right"> <p class="text_center">ব্যবসার জন্য ক্রয়কৃত পশু-প্রাণী</p></label>
                                             <input  class="input-text text-center" id="business_animal" type="text">  
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3" >
-                                            <label class=" text-right col-md-6 label-front"><b>মোট:</b></label>
-                                            <input type="text" class="input-front-result text-left col-md-6" id="business_result">
+                                            <label class=" text-right col-md-6 label-front"><b>মোট:</b></p></label>
+                                            <label type="text" class="input-front-result text-left col-md-6" id="business_result"></p></label>
                                         </div>
 
                 
@@ -396,59 +410,58 @@
 
                                     
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">সাংসারিক প্রয়োজনে গৃহীত ঋণ</label>
+                                            <label class=" jakat-box col-md-6 text-right"> <p class="text_center">সাংসারিক প্রয়োজনে গৃহীত ঋণ</p></label>
                                             <input  class="input-text text-center" id="house_loan" type="text">  
                                         </div>
     
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">ব্যক্তিগত পর্যায়ের সকল ঋণ</label>
+                                            <label class=" jakat-box col-md-6 text-right"> <p class="text_center">ব্যক্তিগত পর্যায়ের সকল ঋণ</p></label>
                                             <input  class="input-text text-center" id="personal_loan" type="text">  
                                         </div>
     
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">ব্যবসার সকল ঋণ ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"><p class="text_center">ব্যবসার সকল ঋণ <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="business_loan" type="text">  
                                         </div>
     
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">বকেয়া বাড়ি ভাড়া, ইউটিলিটি বিল, ট্যাক্স</label>
+                                            <label class=" jakat-box col-md-6 text-right"> <p class="text_center">বকেয়া বাড়ি ভাড়া, ইউটিলিটি বিল, ট্যাক্স</p></label>
                                             <input  class="input-text text-center" id="rent_tax" type="text">  
                                         </div>
     
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">কর্মচারীর বকেয়া বেতন-ভাতা ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"><p class="text_center">কর্মচারীর বকেয়া বেতন-ভাতা <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="staff_salaray" type="text">  
                                         </div>
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">ব্যবসায়িক লেনদেনের ঋণ ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"><p class="text_center">ব্যবসায়িক লেনদেনের ঋণ <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="transactions_loan" type="text">  
                                         </div>
     
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">ডেভেলপমেন্ট ঋণ ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"> <p class="text_center">ডেভেলপমেন্ট ঋণ <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="development_loan" type="text">  
                                         </div>
     
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">কিস্তিতে প্রদেয় মেয়াদি ঋণ ⓘ</label>
+                                            <label class=" jakat-box info col-md-6 text-right"> <p class="text_center">কিস্তিতে প্রদেয় মেয়াদি ঋণ <i class="fa fa-info-circle" ></i></p></label>
                                             <input  class="input-text text-center" id="installment_loan" type="text">  
                                         </div>
     
                                         <div class="d-flex justify-content-start py-3">
-                                            <label class=" jakat-box col-md-6 text-right">স্ত্রীর মোহর ⓘ</label>
-                                            <input  class="input-text text-center" id="wife_loan" type="text">  
+                                            <label class=" jakat-box info col-md-6 text-right"> <p class="text_center">স্ত্রীর মোহর <i class="fa fa-info-circle" ></i></p></label>
+                                            <input  class="input-text text-center" id="wife_loan" type="text">
                                         </div>
 
                                         <div class="d-flex justify-content-start py-3" >
-                                            <label class=" text-right col-md-6 label-front"><b>মোট:</b></label>
-                                            <input type="text" class="input-front-result text-left col-md-6" id="subtract_result">
+                                            <label class=" text-right col-md-6 label-front"><b>মোট:</b></p></label>
+                                            <label type="text" class="input-front-result text-left col-md-6" id="subtract_result"></p></label>
                                         </div>
                                     </form>
                                     
                                     <div class="d-flex justify-content-start py-3">
 
                                         <div class="col-md-6 text-right">
-                                            {{-- <button class="btn btn-danger button-group" onclick="document.getElementById('selectform').reset(); document.getElementsByTagName('input').value = null; return false;"> --}}
                                             <button class="btn btn-danger button-group" id="button" onclick="resetForms()">
                                                 রিসেট করুন
                                             </button>
@@ -461,18 +474,18 @@
 
                                     <form action="" id="form_two">
                                         <div class="d-flex justify-content-center py-3" >
-                                            <label class=" text-right label-front col-md-6"><b>মোট যাকাতযোগ্য সম্পদ:</b></label>
-                                            <input class="input-front-result text-left col-md-6" id="final_jakat_asset_result">
+                                            <label class=" text-right label-front col-md-6 font" > মোট যাকাতযোগ্য সম্পদ: </p></label>
+                                            <label class="input-front-result text-left col-md-6 " id="final_jakat_asset_result"></p></label>
                                         </div>
                                         
                                         <div class="d-flex justify-content-start py-3" >
-                                            <label class=" text-right label-front col-md-6"><b>মোট যাকাতযোগ্য ব্যবসায়িক সম্পদ:</b></label>
-                                            <input class="input-front-result text-left col-md-6" id="final_business_result">
+                                            <label class=" text-right label-front col-md-6 font" > মোট যাকাতযোগ্য ব্যবসায়িক সম্পদ: </p></label>
+                                            <label class="input-front-result text-left col-md-6" id="final_business_result"></p></label>
                                         </div>
     
                                         <div class="d-flex justify-content-start py-3" >
-                                            <label class=" text-right label-front col-md-6"><b>যাকাত থেকে বিয়োগযোগ্য সম্পদ:</b></label>
-                                            <input class="input-front-result text-left col-md-6" id="final_subtract_result">
+                                            <label class=" text-right label-front col-md-6 font"> যাকাত থেকে বিয়োগযোগ্য সম্পদ: </p></label>
+                                            <label class="input-front-result text-left col-md-6" id="final_subtract_result"></p></label>
                                         </div>
                                     </form>
                                 </div>
@@ -480,13 +493,13 @@
                                 <div class="col-md-6">
 
                                     <form action="" id="form_three">
-                                        <div class=" d-flex justify-content-start py-3">
-                                            <label class="nishab-box col-md-6 text-right" style="background: #048C63">মোট যাকাতের পরিমাণ:</label>
-                                            <input class="nishab-box-two text-center" id="final_jakat_result">
+                                        <div class=" d-flex justify-content-start py-3" id="therd_form">
+                                            <label class="nishab-box col-md-6 text-right" style="background: #048C63"> <p class="text_center"> মোট যাকাতের পরিমাণ:</p></label>
+                                            <label class="nishab-box-two text-center"> <p class="text_center_two" id="final_jakat_result"> </p></label>
                                         </div>
                                     </form>
                                     
-                                    <label class="btn button-group nishab-box text-center mb-4" onclick="print()" >পিডিএফ ডাউনলোড করুন</label>
+                                    <button class="btn button-group text-center mb-4 pdf-button" onclick="pdf();">পিডিএফ ডাউনলোড করুন</button>
                                     
                                 </div>
                             </div>
@@ -499,6 +512,10 @@
 
     {{-- Jakat CSS --}}
     <style>
+
+        .font{
+            font-size: 25px;
+        }
 
         .button-group{
             width: 277px;
@@ -516,28 +533,41 @@
             border: none;
             /* margin-left: -8px; */
             background: rgb(18 75 101);
-            color: white;
+            color: #fff;
             border-bottom: 2px solid rgb(239 239 239);
         }
-            .label-front{
-                /* color: white; */
-                font-size: 25px;
-            }
+
+        .label-front{
+            /* color: #fff; */
+            font-size: 25px;
+        }
+
         .hr-color{
             
-            border: 1px solid white;
+            border: 1px solid #fff;
         }
+
         .nishab-box{
             width: 100%;
             font-size: 25px;
             padding: 15px;
             border-radius: 18px;
-            color: white;
+            color: #fff;
+            background: #048C63;
+        }
+        .pdf-button{
+            width: 100%;
+            font-size: 25px;
+            border-radius: 18px;
+            color: #fff;
             background: #0F76A6;
+        }
+        .pdf-button:hover{
+            color: #fff;
         }
         .nishab-box:hover
         {
-            color: white;
+            color: #fff;
         }
         .nishab-box-two{
             font-size: 25px;
@@ -550,23 +580,44 @@
             color: #000;
             background: #EFEFEF;
         }
+
+        .info:before {
+            content: attr(data-hover);
+            visibility: hidden;
+            opacity: 0;
+            /* width: 140px; */
+            background-color: #048C63;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            transition: opacity 1s ease-in-out;
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            /* left: 0; */
+            top: 100%;
+        }
+
+        .info:hover:before {
+            opacity: 1;
+            visibility: visible;
+        }
+
         .jakat-box{
             
             font-size: 25px;
-            /* height: 60px; */
-            /* width: 411px; */
             padding: 15px;
             border-radius: 18px;
             background: #0F76A6;
         }
+
         .jakat-box-two{
             
             font-size: 25px;
-            /* height: 60px; */
             width: 100%;
             padding: 12px;
             margin-left: -25px;
-            /* margin-top: 5px; */
             border-radius: 18px;
             background: #EFEFEF;
             color: #000;
@@ -603,7 +654,7 @@
             box-sizing: border-box;
             border: none;
             background: rgb(18 75 101);
-            color: white;
+            color: #fff;
             border-bottom: 2px solid #FFFFFF;
         }
         
@@ -612,7 +663,7 @@
             background: rgb(18 75 101 / 100%);
             box-shadow: 2px 2px 4px rgb(18 75 101 / 100%);
             margin-top: -4px;
-            color: white;
+            color: #fff;
         }
         
         .jakat-body-input{
@@ -621,26 +672,68 @@
             box-shadow: 2px 2px 4px rgb(0 0 0 / 30%);
         }
 
-        @media (min-width:320px) and (max-width:480px) 
+        @media (min-width:320px) and (max-width:820px) 
         { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
+
+            .font{
+                font-size: 17px;
+            }
+
+            .text_center{
+                transform: translate(0%, -50%);
+                position: inherit;
+                top: 50%;
+            }
+
+            .text_center_two{
+                transform: translate(-50%, -50%);
+                position: relative;
+                top: 50%;
+                left: 50%;
+                font-weight: bold;
+            }
+            
+
+            .info:before {
+                content: attr(data-hover);
+                visibility: hidden;
+                opacity: 0;
+                /* width: 140px; */
+                background-color: #048C63;
+                color: #fff;
+                text-align: center;
+                border-radius: 5px;
+                /* padding: 5px 0; */
+                transition: opacity 1s ease-in-out;
+                position: absolute;
+                z-index: center;
+                left: 0;
+                top: 110%;
+            }
+
+            .info:active:before {
+                opacity: 1;
+                visibility: visible;
+            }
+
             .button-group{
                 width: 140px;
                 height: 40px;
-                font-size: 18px;
+                font-size: 17px;
             }
 
             .input-front-result{
-                font-size: 18px;
+                font-size: 17px;
                 border-bottom: 2px solid rgb(239 239 239);
             }
             .label-front{
-                /* color: white; */
-                font-size: 18px;
+                /* color: #fff; */
+                font-size: 17px;
             }
 
             .jakat-box{
             
-                font-size: 18px;
+                font-size: 17px;
                 height: 84px;
                 /* height: 60px; */
                 /* width: 411px; */
@@ -650,7 +743,7 @@
             }
             .jakat-box-two{
                 
-                font-size: 18px;
+                font-size: 17px;
                 /* height: 60px; */
                 width: 100%;
                 padding: 12px;
@@ -662,7 +755,7 @@
             }
 
             .input-text{
-                font-size: 18px;
+                font-size: 17px;
                 height: 84px;
                 width:100%;
                 padding: 12px;
@@ -676,7 +769,7 @@
             .input-type
             {
                 width: 100%;
-                font-size: 18px;
+                font-size: 17px;
                 /* padding: 12px 20px; */
                 /* margin: 8px 0; */
                 box-sizing: border-box;
@@ -693,19 +786,19 @@
                 box-sizing: border-box;
                 border: none;
                 background: rgb(18 75 101);
-                color: white;
+                color: #fff;
                 border-bottom: 2px solid #FFFFFF;
             }
 
             .nishab-box{
                 width: 100%;
-                font-size: 18px;
+                font-size: 17px;
                 padding: 15px;
                 border-radius: 18px;
                 background: #0F76A6;
             }
             .nishab-box-two{
-                font-size: 18px;
+                font-size: 17px;
                 height: 83px;
                 width: 100%;
                 padding: 12px;
@@ -718,7 +811,21 @@
                 background: #EFEFEF;
             }
 
+            .pdf-button{
+                width: 100%;
+                font-size: 17px;
+                /* padding: 15px; */
+                border-radius: 18px;
+                color: #fff;
+                background: #0F76A6;
+            }
+
+            .pdf-button:hover{
+                color: #fff;
+            }
+
         } 
+
     </style>
     {{-- Jakat CSS  end--}}
         
