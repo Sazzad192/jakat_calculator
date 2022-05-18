@@ -500,10 +500,11 @@
     {{-- Jakat CSS --}}
     <style>
         .jakat-title{
-            padding-top: 70px !important;
+            padding-top: 60px !important;
         }
         .jakat-subtitle{
             padding-top: 0px !important;
+            padding-bottom: 60px !important;
         }
         .jakat-box-first{
             height: 60px;
@@ -558,14 +559,16 @@
         }
 
         .nishab-box{
+            height: 54px;
             width: 100%;
             font-size: 20px;
-            padding: 15px;
+            padding: 13px;
             border-radius: 10px;
             color: #fff;
             background: #048C63;
         }
         .pdf-button{
+            height: 54px;
             width: 100%;
             font-size: 20px;
             border-radius: 10px;
@@ -677,9 +680,80 @@
             background: #EFEFEF;
             box-shadow: 2px 2px 4px rgb(0 0 0 / 30%);
         }
+        .name{
+            padding-top: 5px;
+        }
 
         @media print {
 
+            .jakat-body-input{
+                flex-flow: inherit !important;
+            }
+
+            .name{
+                text-align: left !important;
+            }
+
+            .input-type{
+                
+                text-align: left !important;
+                margin-left: -450px !important;
+                border-bottom: 1px solid rgb(10, 10, 10) !important;
+            }
+
+            .label-front{
+                color: #000 !important;
+                font-size: 20px !important;
+                
+            }
+
+            .input-front-result{
+                color: #000 !important;
+                font-size: 20px !important;
+                border-bottom: 1px solid #000 !important;
+
+            }
+            .nishab-box-two.text-center{
+                margin-left: 10px;
+                padding-top: 22px;
+                font-size: 25px !important;
+                text-align: left !important;
+            }
+
+            .nishab-box.col-lg-6.text-right{
+                text-align: right !important;
+                color: #000 !important;
+                font-size: 20px !important;
+
+            }
+
+            /* div#first_form.jakat-body-input.text-right.p-3.d-flex {
+                flex-flow: column !important;
+            } */
+
+            .input-text p {
+                margin-left: -30px;
+                text-align: left !important;
+            }
+            .jakat-box-first {
+                text-align: right !important;
+            }
+
+            .jakat-box-two {
+                padding-top: 25px;
+                text-align: left !important;
+            }
+            .input-text.text-left{
+                margin-left: 10px;
+                padding-top: 20px;
+                font-size: 20px;
+                text-align: left !important;
+            }
+
+                .jakat-subtitle {
+                padding-top: 0px !important;
+                padding-bottom: 0px !important;
+            }
             .mobile-view{
                 flex-direction: row !important;
                 padding-bottom: 15px !important;
@@ -688,14 +762,32 @@
             .two-button{
                 display: none;
             }
+            .jakat-box-first p.text_center {
+                color: #000;
+                text-align: right !important;
+                font-size: 20px;
+            }
+            #therd_form{
+                flex-flow: inherit !important;
+                
+            }
+            
+            .jakat-box.info {
+                color: #000;
+                text-align: right !important;
+                font-size: 20px;
+            }
 
-            .jakat-box{
-                text-align: end !important;
+            .jakat-box p {
+                color: #000;
+                text-align: right !important;
+                font-size: 20px;
             }
 
             .button-group{
                 display: none;
             }
+
             
 
         }
@@ -706,7 +798,7 @@
             .name{
                 margin-left: -17px;
             }
-            div#therd_form{
+            div #therd_form{
                 flex-flow: column;
             }
             
@@ -736,12 +828,10 @@
                 content: attr(data-hover);
                 visibility: hidden;
                 opacity: 0;
-                /* width: 140px; */
                 background-color: #048C63;
                 color: #fff;
                 text-align: center;
                 border-radius: 5px;
-                /* padding: 5px 0; */
                 transition: opacity 1s ease-in-out;
                 position: absolute;
                 z-index: center;
@@ -767,7 +857,6 @@
                 border-bottom: 2px solid rgb(239 239 239);
             }
             .label-front{
-                /* color: #fff; */
                 font-size: 18px;
             }
 
@@ -775,8 +864,7 @@
             
                 font-size: 17px;
                 text-align:center !important;
-                border-radius: 10px 10px 0px 0px;
-                
+                border-radius: 10px 10px 0px 0px;                
                 background: #0F76A6;
             }
             .jakat-box-two{
@@ -908,12 +996,10 @@
                 content: attr(data-hover);
                 visibility: hidden;
                 opacity: 0;
-                /* width: 140px; */
                 background-color: #048C63;
                 color: #fff;
                 text-align: center;
                 border-radius: 5px;
-                /* padding: 5px 0; */
                 transition: opacity 1s ease-in-out;
                 position: absolute;
                 z-index: center;
@@ -931,7 +1017,6 @@
                 justify-items: center !important;
                 padding: 8px;
                 margin: 2px;
-                /* width: 140px; */
                 height: 40px;
                 font-size: 15px;
             }
@@ -950,7 +1035,6 @@
                 font-size: 15px;
                 text-align:center !important;
                 border-radius: 10px 10px 0px 0px;
-                
                 background: #0F76A6;
             }
             .jakat-box-two{
