@@ -227,7 +227,7 @@
                         
                         <div class="jakat-body-input text-right p-3 d-flex" id="first_form" >
                             <label class="label-front name col-lg-3 mr-2">যাকাত প্রদানকারীর নাম:</label>
-                            <input class="input-type p-0 mr-5" type="text">
+                            <input class="input-type p-0 mr-5" placeholder="যাকাত প্রদানকারীর নাম লিখুন" type="text">
                         </div>
 
                         
@@ -235,7 +235,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-md-10 ">
 
-                                    <form  id="selectforms">
+                                    <form class="print_form"  id="selectforms">
                                         <div class=" d-flex mobile-view justify-content-start pt-4 py-2">
                                             <label class="jakat-box-first col-lg-6 text-right"><p class="text_center">নিসাব পরিমাণ:</p></p></label>
                                             <label class="jakat-box-two text-center"><p class="text_center_two">83000</p></label>
@@ -444,7 +444,7 @@
 
                                         <div class="d-flex justify-content-start py-4" >
                                             <label class=" text-right col-md-6 label-front"><b>মোট:</b></label>
-                                            <label type="text" class="input-front-result text-left col-md-6" id="subtract_result"></p></label>
+                                            <label class="input-front-result text-left col-md-6" id="subtract_result"></label>
                                         </div>
                                     </form>
                                     
@@ -483,7 +483,7 @@
 
                                     <div class=" d-flex justify-content-start py-2" id="therd_form">
                                         <label class="nishab-box col-lg-6 text-right" style="background: #048C63"> মোট যাকাতের পরিমাণ:</label>
-                                        <label class="nishab-box-two text-center"> <p class="text_center_two" id="final_jakat_result"> </p></label>
+                                        <label class="nishab-box-two text-center" id="final_jakat_result"> </label>
                                     </div>
                                     
                                     <button class=" btn button-group text-center mb-4 pdf-button" onclick="pdf();">পিডিএফ ডাউনলোড করুন</button>
@@ -529,11 +529,11 @@
             background-size: cover;
         }
         .button-group{
+            border-radius: 10px;
             padding: 15px;
             width: 209px;
             height: 54px;
             font-size: 18px;
-            border-radius: 15px;
         }
 
         .input-front-result{
@@ -651,7 +651,7 @@
             margin-left: -8px;
             background: #EFEFEF;
             border-bottom: 2px solid rgb(9, 8, 8);
-            margin-right: 125px!important;
+            margin-right: 104px!important;
         }
         .input-type-two
         {
@@ -687,6 +687,10 @@
 
             .two-button{
                 display: none;
+            }
+
+            .jakat-box{
+                text-align: end !important;
             }
 
             .button-group{
@@ -751,6 +755,7 @@
             }
 
             .button-group{
+                border-radius: 10px;
                 padding: 8px;
                 width: 140px;
                 height: 40px;
@@ -843,9 +848,6 @@
                 text-align: center !important;
                 font-size: 17px;
                 width: 100%;
-                padding-top: 18px;
-                box-sizing: border-box;
-                border: none;
                 margin-left: 0px;
                 margin-top: -8px;
                 border-radius: 0px 0px 10px 10px;
@@ -867,7 +869,7 @@
             }
 
         } 
-        @media (max-width:280px)  
+        @media (max-width:280px)
         { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
 
             .two-button{
@@ -925,6 +927,7 @@
             }
 
             .button-group{
+                border-radius: 10px;
                 justify-items: center !important;
                 padding: 8px;
                 margin: 2px;
