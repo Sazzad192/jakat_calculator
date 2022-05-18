@@ -696,7 +696,7 @@
 
         }
 
-        @media (min-width:320px) and (max-width:820px) 
+        @media (min-width:320px) and (max-width:920px) 
         { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
 
             .name{
@@ -847,7 +847,7 @@
                 box-sizing: border-box;
                 border: none;
                 margin-left: 0px;
-                margin-top: -7px;
+                margin-top: -8px;
                 border-radius: 0px 0px 10px 10px;
                 color: #000;
                 background: #EFEFEF;
@@ -867,45 +867,92 @@
             }
 
         } 
+        @media (max-width:280px)  
+        { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ 
 
-        @media (min-width:768px) and (max-width:1180px){
-            
+            .two-button{
+                flex-flow: column;
+            }
             .name{
                 margin-left: -17px;
             }
+            div#therd_form{
+                flex-flow: column;
+            }
+            
+            .jakat-body-input {
+                text-align: left !important;
+                flex-flow: column;
+                margin-bottom: 4px;
+                border-radius: 5px;
+                background: #EFEFEF;
+                box-shadow: 2px 2px 4px rgb(0 0 0 / 30%);
+            }
+            .mobile-view{
+                flex-flow: column;
+                padding-bottom: 15px !important;
+            }
+            .font{
+                font-size: 15px;
+            }
+            .common-taitel {
+                position: relative;
+                color: #0b0a0a;
+                font-size: 15px;
+            }
+            
+
+            .info:before {
+                content: attr(data-hover);
+                visibility: hidden;
+                opacity: 0;
+                /* width: 140px; */
+                background-color: #048C63;
+                color: #fff;
+                text-align: center;
+                border-radius: 5px;
+                /* padding: 5px 0; */
+                transition: opacity 1s ease-in-out;
+                position: absolute;
+                z-index: center;
+                left: 0;
+                top: 110%;
+            }
+
+            .info:active:before {
+                opacity: 1;
+                visibility: visible;
+            }
 
             .button-group{
-            padding: 15px;
-            width: 209px;
-            height: 54px;
-            font-size: 18px;
-            border-radius: 15px;
-        }
-        .pdf-button{
-            width: 100%;
-            font-size: 20px;
-            border-radius: 10px;
-            color: #fff;
-            background: #0F76A6;
-        }
-        .pdf-button:hover{
-            color: #fff;
-        }
-            .label-front{
-            
-                font-size: 20px;
+                justify-items: center !important;
+                padding: 8px;
+                margin: 2px;
+                /* width: 140px; */
+                height: 40px;
+                font-size: 15px;
             }
+
+            .input-front-result{
+                font-size: 15px;
+                border-bottom: 2px solid rgb(239 239 239);
+            }
+            .label-front{
+                /* color: #fff; */
+                font-size: 15px;
+            }
+
             .jakat-box{
             
-                font-size: 20px;
+                font-size: 15px;
                 text-align:center !important;
-                width: 100% !important;
                 border-radius: 10px 10px 0px 0px;
+                
                 background: #0F76A6;
             }
             .jakat-box-two{
                 
-                font-size: 20px;
+                font-size: 15px;
                 width: 100%;
                 height: 50px;
                 margin-top: -10px;
@@ -917,9 +964,8 @@
 
             .jakat-box-first{
                 height: 50px;
-                width: 100% !important;
                 text-align: center !important;
-                font-size: 20px;
+                font-size: 15px;
                 padding: 15px;
                 border-radius: 10px 10px 0px 0px;
                 background: #0F76A6;
@@ -928,7 +974,7 @@
             .input-text{
                 text-align: center !important;
                 padding: 0px;
-                font-size: 20px;
+                font-size: 15px;
                 width:100%;
                 box-sizing: border-box;
                 margin-left: 0px;
@@ -940,7 +986,7 @@
             .input-type
             {
                 width: 100%;
-                font-size: 20px;
+                font-size: 15px;
                 box-sizing: border-box;
                 border: none;
                 margin-left: -8px;
@@ -950,6 +996,7 @@
             .input-type-two
             {
                 width: 100%;
+                /* padding: 12px 20px; */
                 margin: 8px 0;
                 box-sizing: border-box;
                 border: none;
@@ -959,14 +1006,45 @@
             }
 
             .nishab-box{
+                text-align: center !important;
                 width: 100%;
-                font-size: 20px;
+                font-size: 15px;
                 padding: 15px;
-                border-radius: 10px 10px 0px 0px ;
-                color: #fff;
-                background: #048C63;
+                border-radius: 10px 10px 0px 0px;
+                background: #0F76A6;
             }
-        }
+            .nishab-box-two{
+                text-align: center !important;
+                font-size: 15px;
+                width: 100%;
+                padding-top: 18px;
+                box-sizing: border-box;
+                border: none;
+                margin-left: 0px;
+                margin-top: -8px;
+                border-radius: 0px 0px 10px 10px;
+                color: #000;
+                background: #EFEFEF;
+            }
+
+            .pdf-button{
+                width: 100%;
+                font-size: 15px;
+                border-radius: 10px;
+                color: #fff;
+                background: #0F76A6;
+            }
+
+            .pdf-button:hover{
+                color: #fff;
+            }
+
+        } 
+
+
+
+        
+
 
     </style>
     {{-- Jakat CSS  end--}}
