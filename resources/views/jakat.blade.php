@@ -243,7 +243,7 @@
 
                                         <div class="text-left label-front"> সম্পদ </div> <hr class="hr-color">
 
-                                        <div class=" d-flex mobile-view mobile-view justify-content-start pb-1">
+                                        <div class=" d-flex mobile-view justify-content-start pb-1">
                                             <label class=" jakat-box col-lg-6 text-right"> <p class="text_center">স্বর্ণের মূল্য:</p></label>
                                             <input class="input-text text-left" id="gold" type="text">
                                         </div>
@@ -686,6 +686,13 @@
 
         @media print {
 
+            .hr-color{
+                border: 0.5px solid #000 !important;
+            }
+            .common-taitel{
+                padding-top: 0px !important;
+            }
+
             .jakat-body-input{
                 flex-flow: inherit !important;
             }
@@ -695,7 +702,6 @@
             }
 
             .input-type{
-                
                 text-align: left !important;
                 margin-left: -450px !important;
                 border-bottom: 1px solid rgb(10, 10, 10) !important;
@@ -704,7 +710,6 @@
             .label-front{
                 color: #000 !important;
                 font-size: 20px !important;
-                
             }
 
             .input-front-result{
@@ -724,17 +729,17 @@
                 text-align: right !important;
                 color: #000 !important;
                 font-size: 20px !important;
-
             }
-
-            /* div#first_form.jakat-body-input.text-right.p-3.d-flex {
-                flex-flow: column !important;
-            } */
 
             .input-text p {
                 margin-left: -30px;
                 text-align: left !important;
             }
+
+            div.d-flex.mobile-view.justify-content-start.pb-1{
+                padding-bottom: 0px !important;
+            }
+
             .jakat-box-first {
                 text-align: right !important;
             }
@@ -750,7 +755,7 @@
                 text-align: left !important;
             }
 
-                .jakat-subtitle {
+            .jakat-subtitle {
                 padding-top: 0px !important;
                 padding-bottom: 0px !important;
             }
@@ -769,7 +774,9 @@
             }
             #therd_form{
                 flex-flow: inherit !important;
-                
+            }
+            .justify-content-start{
+                padding: 0px !important;
             }
             
             .jakat-box.info {
@@ -787,9 +794,6 @@
             .button-group{
                 display: none;
             }
-
-            
-
         }
 
         @media (min-width:320px) and (max-width:920px) 
