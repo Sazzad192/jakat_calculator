@@ -353,7 +353,7 @@
                                             </div>
 
 
-                                            <div class="text-left label-front">ব্যবসায়িক সম্পদ</div> <hr class="hr-color">
+                                            <div class="text-left common_font label-front">ব্যবসায়িক সম্পদ</div> <hr class="hr-color">
 
                                             <div class="form-group row">
                                                 <label for="business_property" class="col-lg-6 col-form-label text-right">ব্যবসার উদ্দেশ্যে ক্রয়কৃত জমি <i class="fa fa-info-circle" data-toggle="tooltip" title="যা কেনা হয়েছে বিক্রির নিয়তে। বর্তমান বিক্রয় মূল্য অনুসারে।"></i></label>
@@ -395,7 +395,7 @@
                                                 <div class="input-front-result text-left col-lg-6" id="business_result"></p></div>
                                             </div>
 
-                                            <div class="text-left label-front">যাকাতের সম্পদ থেকে বিয়োগযোগ্য ঋণ</div> <hr class="hr-color">
+                                            <div class="text-left common_font label-front">যাকাতের সম্পদ থেকে বিয়োগযোগ্য ঋণ</div> <hr class="hr-color">
 
                                             <div class="form-group row">
                                                 <label for="house_loan" class="col-lg-6 col-form-label text-right">সাংসারিক প্রয়োজনে গৃহীত ঋণ</label>
@@ -498,11 +498,20 @@
         </section>
 
         <style>
+
+            .form-control:focus {
+                /* color: #495057; */
+                background-color: #efefef;
+                border-color: black !important;
+                outline: 0 !important;
+                box-shadow: none !important;
+            }
             .name{
                 margin-right: -47px;
                 padding-right: 55px;
                 font-size: 19px;
-                margin-top: 2px;
+                margin-top: -2px;
+                font-weight: bold;
             }
             .jakat-title{
                 padding-top: 60px !important;
@@ -522,7 +531,7 @@
             }
 
             .common_font{
-                font-size: 18px;
+                font-size: 19px;
             }
             .jakat-body-input{
                 background: #EFEFEF;
@@ -539,6 +548,7 @@
                 background: #EFEFEF;
                 border-bottom: 2px solid rgb(9, 8, 8);
             }
+            
 
             .main-part{
                 border-radius: 5px;
@@ -702,6 +712,10 @@
 
             @media print {
                 
+                .name {
+                    margin-right: 47px !important;
+                    padding-right: -55px !important;
+                }
                 .hr-color{
                     border: 0.5px solid #000 !important;
                 }
@@ -731,7 +745,8 @@
                     text-align: left !important;
                     font-weight: bold;
                     border: none;
-                    font-size: 30px !important;
+                    margin-top: 1px !important;
+                    font-size: 20px !important;
                 }
                 .nishab-box{
                     font-weight: bold;
@@ -762,6 +777,11 @@
                     color: #000;
                     text-align: left !important;
                 }
+
+                .input-front-result {
+                    border-bottom: 0px solid rgb(239 239 239) !important;
+                }
+
                 .jakat-subtitle {
                     padding-top: 0px !important;
                     padding-bottom: 10px !important;
@@ -769,6 +789,10 @@
 
                 #therd_form{
                     flex-flow: inherit !important;
+                }
+                .common_font {
+                    color: black;
+                    font-size: 19px;
                 }
 
                 .two-button{
