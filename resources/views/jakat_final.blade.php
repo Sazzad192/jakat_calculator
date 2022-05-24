@@ -200,10 +200,6 @@
                 // return false;
 
             }
-
-            function pdf() {
-                window.print();
-            };
         
         </script>
     
@@ -342,13 +338,13 @@
                                                 <input type="number" class=" col-lg-6 form-control text-left" id="invest_money">
                                             </div>
 
-                                            <div class="d-flex justify-content-start py-4" >
-                                                <div class="text-right col-lg-6 label-front"><b>মোট:</b></div>
-                                                <div type="number" class="input-front-result text-left col-lg-6" id="jakat_asset_result"></p></div>
+                                            <div class="d-flex justify-content-start py-2" >
+                                                <div class="text-right col-lg-6 label-front">মোট:</div>
+                                                <div type="number" class="input-front-result text-left col-lg-6" id="jakat_asset_result"></div>
                                             </div>
 
 
-                                            <div class="text-left common_font label-front">ব্যবসায়িক সম্পদ</div> <hr class="hr-color">
+                                            <div class="text-left common_font label-front business-asset">ব্যবসায়িক সম্পদ</div> <hr class="hr-color">
 
                                             <div class="form-group row">
                                                 <label for="business_property" class="col-lg-6 col-form-label text-right">ব্যবসার উদ্দেশ্যে ক্রয়কৃত জমি <i class="fa fa-info-circle" data-toggle="tooltip" title="যা কেনা হয়েছে বিক্রির নিয়তে। বর্তমান বিক্রয় মূল্য অনুসারে।"></i></label>
@@ -385,8 +381,8 @@
                                                 <input type="number" class=" col-lg-6 form-control text-left" id="business_animal">
                                             </div>
 
-                                            <div class="d-flex justify-content-start py-4" >
-                                                <div class="text-right col-lg-6 label-front"><b>মোট:</b></div>
+                                            <div class="d-flex justify-content-start py-2" >
+                                                <div class="text-right col-lg-6 label-front">মোট:</div>
                                                 <div class="input-front-result text-left col-lg-6" id="business_result"></p></div>
                                             </div>
 
@@ -437,8 +433,8 @@
                                                 <input type="number" class=" col-lg-6 form-control text-left" id="wife_loan">
                                             </div>
 
-                                            <div class="d-flex justify-content-start py-4" >
-                                                <div class="text-right col-lg-6 label-front"><b>মোট:</b></div>
+                                            <div class="d-flex justify-content-start pt-2 pb-4" >
+                                                <div class="text-right col-lg-6 label-front">মোট:</div>
                                                 <div type="number" class="input-front-result text-left col-lg-6" id="subtract_result"></p></div>
                                             </div>
                                         </form>
@@ -454,19 +450,19 @@
                                         </div>
 
                                         <form action="" id="form_two">
-                                            <div class="d-flex justify-content-start py-4" >
-                                                <div class="text-right col-lg-6 label-front"><b>মোট যাকাতযোগ্য সম্পদ:</b></div>
+                                            <div class="d-flex justify-content-start pt-5 pb-2" >
+                                                <div class="text-right col-lg-6 label-front">মোট যাকাতযোগ্য সম্পদ:</div>
                                                 <div type="number" class="input-front-result text-left col-lg-6" id="final_jakat_asset_result"></p></div>
                                             </div>
 
-                                            <div class="d-flex justify-content-start py-4" >
-                                                <div class="text-right col-lg-6 label-front"><b>মোট যাকাতযোগ্য ব্যবসায়িক সম্পদ:</b></div>
+                                            <div class="d-flex justify-content-start pt-4 pb-2" >
+                                                <div class="text-right col-lg-6 label-front ">মোট যাকাতযোগ্য ব্যবসায়িক সম্পদ:</div>
                                                 <div type="number" class="input-front-result text-left col-lg-6" id="final_business_result"></p></div>
                                             </div>
 
 
                                             <div class="d-flex justify-content-start py-4" >
-                                                <div class="text-right col-lg-6 label-front"><b>যাকাত থেকে বিয়োগযোগ্য সম্পদ:</b></div>
+                                                <div class="text-right col-lg-6 label-front">যাকাত থেকে বিয়োগযোগ্য সম্পদ:</div>
                                                 <div type="number" class="input-front-result text-left col-lg-6" id="final_subtract_result"></p></div>
                                             </div>
                                         </form>
@@ -479,7 +475,7 @@
                                                 </div>
 
                                                 <div class="row">
-                                                    <button class=" btn button-group text-center mb-4 pdf-button" onclick="pdf();">পিডিএফ ডাউনলোড করুন</button>
+                                                    <button class=" btn button-group text-center mb-4 pdf-button" onclick="print();">পিডিএফ ডাউনলোড করুন</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -493,6 +489,10 @@
         </section>
 
         <style>
+
+            .text-right.col-lg-6.label-front{
+                margin-left: -8px;
+            }
 
             .form-control:focus {
                 /* color: #495057; */
@@ -526,6 +526,7 @@
             }
 
             .common_font{
+                margin: 6px 9px !important;
                 font-size: 19px;
             }
             .jakat-body-input{
@@ -539,7 +540,7 @@
                 font-size: 18px;
                 box-sizing: border-box;
                 border: none;
-                margin-left: -8px;
+                margin-left: -13px;
                 background: #EFEFEF;
                 border-bottom: 2px solid rgb(9, 8, 8);
             }
@@ -554,6 +555,7 @@
             }
 
             .hr-color{
+                margin: 0px 8px 0px 9px;
                 border: 1px solid #fff;
             }
 
@@ -636,7 +638,7 @@
                 color: #fff;
             }
 
-            @media (min-width:280px) and (max-width:920px){
+            @media (min-width:280px) and (max-width:760px){
                 
                 .jakat-title {
                     padding-top: 30px !important;
@@ -664,8 +666,79 @@
                 }
 
                 .jakat-box div label {
-                    padding: 0px !important;
+                    /* padding: 0px !important; */
                     font-size: 16px;
+                    margin-left: 0px;
+                    border-radius: 10px 10px 0px 0px;
+                    text-align: center !important;
+                }
+
+                .jakat-box div input {
+                    margin-top: -2px;
+                    padding-right: 0px;
+                    padding-left: 0px;
+                    margin-left: 0px;
+                    text-align: center !important;
+                    border-radius: 0px 0px 10px 10px;
+                }
+
+                .two-button div .text-right{
+                    margin-bottom: 5px;
+                    text-align: right !important;
+                }
+
+                .button-group{
+                    padding: 0px;
+                    width: 100%;
+                    font-size: 16px;
+                }
+                .nishab-box{
+                    text-align: center !important;
+                    border-radius: 10px 10px 0px 0px;
+                }
+                .nishab-box-two {
+                    margin-left: 0px;
+                    margin-top: -5px;
+                    border-radius: 0px 0px 10px 10px;
+                }
+                
+                .pdf-button {
+                    
+                    margin: 0px 0px 0px 0px;
+                }
+                
+            }
+
+            @media (min-width:768px) and (max-width:920px){
+                
+                .jakat-title {
+                    padding-top: 30px !important;
+                }
+                .jakat-subtitle {
+                    padding-top: 0px !important;
+                    padding-bottom: 30px !important;
+                }
+                .name{
+                    margin-right: -20px !important;
+                    /* padding-right: 55px; */
+                    font-size: 19px;
+                    text-align: start !important;
+                }
+
+                .input-type {
+                    /* font-size: 18px; */
+                    margin-left: 0px;
+                    margin-top: 0px;
+                }
+                input[type="number"]::placeholder { 
+                    
+                  
+                  font-size: 19px !important;
+                }
+
+                .jakat-box div label {
+                    /* padding: 0px !important; */
+                    /* font-size: 1px; */
                     margin-left: 0px;
                     border-radius: 10px 10px 0px 0px;
                     text-align: center !important;
@@ -783,14 +856,18 @@
                     padding-top: 0px !important;
                     padding-bottom: 10px !important;
                 }
+                .business-asset{
+                    margin-top: 50px !important;
+                }
+
+                .common_font{
+                    color: #000;
+                    /* margin: 6px 9px !important; */
+                    font-size: 19px;
+                }
 
                 #therd_form{
                     flex-flow: inherit !important;
-                }
-                .common_font {
-                    margin-top: 50px !important;
-                    color: black;
-                    font-size: 19px;
                 }
 
                 .two-button{
