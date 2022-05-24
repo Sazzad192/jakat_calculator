@@ -308,11 +308,6 @@
                                             </div>
 
                                             <div class="form-group row">
-                                                <label for="bond_money" class="col-lg-6 col-form-label text-right">বন্ড, ট্রেজারী বিল, সঞ্চয়পত্র <i class="fa fa-info-circle" data-toggle="tooltip" title="ক্রয় মূল্য। অতিরিক্ত পুরোটাই সদকা করা জরুরী।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="bond_money">
-                                            </div>
-
-                                            <div class="form-group row">
                                                 <label for="provident_fund" class="col-lg-6 col-form-label text-right">প্রভিডেন্ট ফান্ড <i class="fa fa-info-circle" data-toggle="tooltip" title="যদি ঐচ্ছিক হয়, বাধ্যতামূলক কেটে রাখা অংশের বিগত বছরের যাকাত দিতে হবে না। টাকা হস্তগত হওয়ার পর থেকে হিসাব শুরু হবে।"></i></label>
                                                 <input type="number" class=" col-lg-6 form-control text-left" id="provident_fund">
                                             </div>
