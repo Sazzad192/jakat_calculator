@@ -583,6 +583,7 @@
             
                 height: 45px;
                 margin-left: 8px;
+                padding: 10px;
                 font-size: 18px;
                 border-radius: 10px;
                 background: #0F76A6;
@@ -668,6 +669,7 @@
                 }
 
                 .jakat-box div label {
+                    padding: 0px !important;
                     font-size: 16px;
                     margin-left: 0px;
                     border-radius: 10px 10px 0px 0px;
@@ -791,6 +793,7 @@
                     flex-flow: inherit !important;
                 }
                 .common_font {
+                    margin-top: 50px !important;
                     color: black;
                     font-size: 19px;
                 }
