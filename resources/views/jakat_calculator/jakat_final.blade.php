@@ -63,8 +63,8 @@
                 })(window, document, 'script', 'dataLayer', 'GTM-PMJ5N5H');
         </script>
     
-        <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" type="472c72fd190d118d75330ea1-text/javascript"></script>
-        <script type="472c72fd190d118d75330ea1-text/javascript">
+            <script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js" type="472c72fd190d118d75330ea1-text/javascript"></script>
+            <script type="472c72fd190d118d75330ea1-text/javascript">
                 window.googletag = window.googletag || {cmd: []};
                 googletag.cmd.push(function () {
                     var sizeMap_970x90_320x100 = googletag.sizeMapping().addSize([970, 0], [[970, 90]]).addSize([320, 0], [[320, 100]]).build();
@@ -85,7 +85,7 @@
                     googletag.enableServices();
                 });
             </script>
-        <style>
+            <style>
                 body, .advertisement {
                     background:#f9f9f9;
                 }
@@ -334,13 +334,15 @@
                                             </div>
 
                                             <div class="form-group row">
-                                                <label for="invest_money" class="col-lg-6 col-form-label text-right">ব্যবসায় বিনিয়োগকৃত টাকা <i class="fa fa-info-circle" data-toggle="tooltip" title="নিজের অংশে বিদ্যমান যাকাতযোগ্য সম্পদ।"></i></label>
+                                                <label for="invest_money" class="col-6 col-lg-6 col-form-label text-right">ব্যবসায় বিনিয়োগকৃত টাকা <i class="fa fa-info-circle" data-toggle="tooltip" title="নিজের অংশে বিদ্যমান যাকাতযোগ্য সম্পদ।"></i></label>
                                                 <input type="number" class=" col-lg-6 form-control text-left" id="invest_money">
                                             </div>
 
-                                            <div class="d-flex justify-content-start py-2" >
-                                                <div class="text-right col-lg-6 label-front">মোট:</div>
-                                                <div type="number" class="input-front-result text-left col-lg-6" id="jakat_asset_result"></div>
+                                            <div class="row">
+                                                <div class="d-flex col-lg-12 justify-content-center py-2" >
+                                                    <div class="text-right col-lg-6 label-front">মোট:</div>
+                                                    <div type="number" class="input-front-result text-left col-lg-6" id="jakat_asset_result"></div>
+                                                </div>
                                             </div>
 
 
@@ -381,7 +383,7 @@
                                                 <input type="number" class=" col-lg-6 form-control text-left" id="business_animal">
                                             </div>
 
-                                            <div class="d-flex justify-content-start py-2" >
+                                            <div class="row d-flex justify-content-start py-2" >
                                                 <div class="text-right col-lg-6 label-front">মোট:</div>
                                                 <div class="input-front-result text-left col-lg-6" id="business_result"></p></div>
                                             </div>
@@ -433,7 +435,7 @@
                                                 <input type="number" class=" col-lg-6 form-control text-left" id="wife_loan">
                                             </div>
 
-                                            <div class="d-flex justify-content-start pt-2 pb-4" >
+                                            <div class=" row d-flex justify-content-start pt-2 pb-4" >
                                                 <div class="text-right col-lg-6 label-front">মোট:</div>
                                                 <div type="number" class="input-front-result text-left col-lg-6" id="subtract_result"></p></div>
                                             </div>
@@ -649,24 +651,19 @@
                 }
                 .name{
                     margin-right: -20px !important;
-                    /* padding-right: 55px; */
                     font-size: 19px;
                     text-align: start !important;
                 }
 
                 .input-type {
-                    /* font-size: 18px; */
                     margin-left: 0px;
                     margin-top: 0px;
                 }
-                input[type="number"]::placeholder { 
-                    
-                  
+                input[type="number"]::placeholder {
                   font-size: 19px !important;
                 }
 
                 .jakat-box div label {
-                    /* padding: 0px !important; */
                     font-size: 16px;
                     margin-left: 0px;
                     border-radius: 10px 10px 0px 0px;
@@ -703,8 +700,7 @@
                 }
                 
                 .pdf-button {
-                    
-                    margin: 0px 0px 0px 0px;
+                   margin: 0px 0px 0px 0px;
                 }
                 
             }
