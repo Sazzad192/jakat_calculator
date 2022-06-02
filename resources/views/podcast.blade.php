@@ -138,7 +138,7 @@
                                                 <img src="image/d_post.png" alt="">
                                             </div>
                                         </div>
-                
+                                        
                                         <section class="hide">
                                             <div class="row pt-2 justify-content-center">
                                                 <div class="col-lg-12 d-flex align-items-center bg_color">

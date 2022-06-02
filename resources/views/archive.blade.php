@@ -123,9 +123,16 @@
                                 <div class="col-lg-8">
                                     <div class="row mb-2">
                                         <div class="col-lg-12 d-flex justify-content-between">
-                                            <label type="button" class="btn btn-group tag_button"> তারিখ থেকে </label>
-                                            <label type="button" class="btn btn-group tag_button"> তারিখ পর্যন্ত </label>
-                                            <label type="button" class="btn btn-group tag_button"> ক্যাটাগরি </label>
+                                            <input placeholder="তারিখ থেকে" class="tag_button" type="text" onfocus="(this.type='date')" onblur="(this.type='text')">
+                                            <input placeholder="তারিখ পর্যন্ত" class="tag_button" type="text" onfocus="(this.type='date')" onblur="(this.type='text')">
+
+                                            <select  name='options' class="tag_button">
+                                                <option value="0">ক্যাটাগরি</option>
+                                                <option value="">জাতীয়</option>
+                                                <option value="">রাজনীতি</option>
+                                                <option value="">অর্থনীতি</option>
+                                                <option value="">সারাদেশ</option>
+                                              </select>
                                         </div>
                                     </div>
                                     <div class="row">

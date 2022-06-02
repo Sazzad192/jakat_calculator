@@ -111,6 +111,7 @@ body{
     padding: 6px 52px;
 }
 .tag_button{
+    border: none;
     background-color: #FFFFFF;
     color: #124B65;
     height: 44px;
@@ -118,9 +119,13 @@ body{
     border-radius: 30px;
     font-size: 19px;
     margin: 6px;
-    display: flex;
-    justify-content: center;
 }
+
+::placeholder{
+    color: #234E67;
+    text-align: center;
+}
+
 .search_input{
     justify-content: left !important;
     height: 44px;
@@ -204,6 +209,22 @@ body{
     }
     .seek_slider, .volume_slider {
         background: #DFDFDF !important;
+    }
+
+    select {
+        border: none;
+        outline:none;
+        background: transparent;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        margin:0;
+        display:block;
+        width: 100%;
+        cursor: pointer;
+        font-size: 14px;
+        border-radius: 15px;
+        text-align: center;
     }
 
     @media (min-width:358px) and (max-width:760px){
