@@ -10,7 +10,7 @@ class JakatController extends Controller
     
     public function index()
     {
-        return view('jakat_final');
+        return view('jakat_calculator/jakat_final');
     }
 
     // public function calculate(Request $request)

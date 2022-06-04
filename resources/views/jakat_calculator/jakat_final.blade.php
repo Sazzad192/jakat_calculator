@@ -722,13 +722,10 @@
                 }
 
                 .input-type {
-                    /* font-size: 18px; */
                     margin-left: 0px;
                     margin-top: 0px;
                 }
-                input[type="number"]::placeholder { 
-                    
-                  
+                input[type="number"]::placeholder {
                   font-size: 19px !important;
                 }
 

@@ -191,8 +191,8 @@
                                         </section>
                                     </div>
                                     
-                                    <div class="col-6 col-lg-12 padding">
-                                        <div class="row audio_section">
+                                    <div class="col-6 col-lg-12 audio_section padding">
+                                        <div class="row">
                                             <div class="col-lg-12 d-flex justify-content-between label_bg_two">
                                                 <label class="national">রাজনীতি</label>
                                                 <img src="image/d_post.png" alt="">
@@ -248,11 +248,16 @@
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <a href="" class=" pt-2 text-center" style="color:#10586F; font-weight: bold;
+                                            font-size: 20px;">
+                                                <u>আরও শুনুন...</u>
+                                            </a>
                                         </section>
                                     </div>
 
                                     <div class="col-6 col-lg-12 padding">
-                                        <div class="row audio_section">
+                                        <div class="row ">
                                             <div class="col-lg-12 d-flex justify-content-between label_bg_two">
                                                 <label class="national">রাজনীতি</label>
                                                 <img src="image/d_post.png" alt="">
