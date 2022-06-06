@@ -23,6 +23,9 @@ Route::get('/', function () {
 
 Route::get('/jakat','JakatController@index');
 
+// Route::get('/podcast-home','PodcastController@index');
 Route::get('/podcast','PodcastController@index');
 Route::get('/archive','PodcastController@archive');
 Route::get('/detail','PodcastController@detail');
+
+Route::get('/count_down','JakatController@count');

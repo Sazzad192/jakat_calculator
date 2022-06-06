@@ -12,6 +12,9 @@ class JakatController extends Controller
     {
         return view('jakat_calculator/jakat_final');
     }
+    public function count(){
+        return view('countdown_dmail');
+    }
 
     // public function calculate(Request $request)
     // {
