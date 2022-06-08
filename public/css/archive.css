@@ -88,6 +88,11 @@ body{
     opacity: 0.5;
     font-size: 12px;
 }
+.archive_head{
+    height: 100px;
+    border-radius: 10px;
+    background: #8BB2B8;
+}
 
 .bg_color{
     border-radius: 10px;
@@ -239,7 +244,14 @@ body{
 
     @media (min-width:358px) and (max-width:760px){
         
-            .hide{
+        .archive_head{
+            height: 30px;
+            background: none;
+        }
+        .archive_head img{
+            display: none;
+        }
+        .hide{
             display: none;
         }
         .mobile_none{
@@ -248,6 +260,8 @@ body{
         .bg_color img{
             height: 121px !important;
             width: 117px !important;
+            object-fit: cover;
+            border-radius: 15px;
             padding: 8px 8px 8px 8px;
         }
         .tag_button{
@@ -396,6 +410,10 @@ body{
         }
         .bg_color label{
             display: none !important;
+        }
+
+        .audio_section {
+            background: #F5F5F5 !important;
         }
 
     }

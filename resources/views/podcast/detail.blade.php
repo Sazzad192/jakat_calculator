@@ -381,7 +381,7 @@
             <div class="podcast-head-bg">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-12 d-flex position">
+                        <div class="col-xl-12 d-flex position">
                             <h1>ঢাকা পোস্ট পডকাস্ট</h1>
                             <i class="fa fa-podcast"></i>
                         </div>
@@ -391,7 +391,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-8">
+                    <div class="col-xl-8">
                         
                         <img class="img-fluid pb-3" src="image/News image.png" alt="">
 
@@ -409,9 +409,49 @@
                                 <div class="repeat-track" onclick="repeatTrack()">
                                     <i class="fa fa-repeat fa-1x" title="repeat"></i>
                                 </div>
-                                <div class="repeat-track" onclick="shareTrack()">
+
+                                <div id="click" class="repeat-track" onclick="shareTrack()">
                                     <i class="fas fa-share-alt fa-1x"></i>
+                                    {{-- <a href=""> <i class="fab fa-facebook"></i> </a>
+                                    <a href=""> <i class="fab fa-twitter"></i> </a>
+                                    <a href=""><i class="fab fa-whatsapp"></i></a> --}}
                                 </div>
+
+                                {{-- <div class="sticky_share_btn">
+                                    <div class="fixed_share">
+                                      <ul class="listing">
+                                        <li class="facebook">
+                                          <a href="#">
+                                            <i class="fa fa-facebook-square"></i>
+                                          </a>
+                                        </li>
+                                        <li class="twitter">
+                                          <a href="#">
+                                            <i class="fa fa-twitter"></i>
+                                          </a>
+                                        </li>
+                                        <li class="pinterest">
+                                          <a href="#">
+                                            <i class="fa fa-pinterest"></i>
+                                          </a>
+                                        </li>
+                                        <li class="linkedin">
+                                          <a href="#">
+                                            <i class="fa fa-linkedin-square"></i>
+                                          </a>
+                                        </li>
+                                        <li class="whatsapp">
+                                          <a href="#">
+                                            <i class="fa fa-whatsapp"></i>
+                                          </a>
+                                        </li>
+                                      </ul>
+                                      <span class="share-toggle">
+                                        <i class="fa fa-share-alt"></i>
+                                      </span>
+                                    </div>
+                                </div> --}}
+                                
                             </div>
 
                             <div class="d-flex justify-content-center mobile_change">
@@ -436,7 +476,7 @@
                         </section>
                     </div>
 
-                    <div class="col-lg-4 mobile_none">
+                    <div class="col-xl-4 mobile_none">
                         <p class="text-right right_head">ক্যাটাগরি</p>
 
                         <a href="#" class="d-flex justify-content-between label_bg">
@@ -475,6 +515,12 @@
         </div>
     </main>
 
+    <script type="text/javascript">
+        jQuery(".sticky_share_btn").click(function(){
+          jQuery(".listing").fadeToggle(600);
+        });
+    </script>
+
     <style>
         a:hover{
             text-decoration: none;
@@ -494,6 +540,7 @@
         .mobile_change{
             margin: 0px 15px;
         }
+
         @media (min-width:358px) and (max-width:759px){
             
             .playpause-track{
@@ -536,7 +583,7 @@
             }
         }
 
-        @media (min-width:760px) and (max-width:1233px){
+        @media (min-width:760px) and (max-width:1201px){
             .mobile_none{
                 display: none;
             }

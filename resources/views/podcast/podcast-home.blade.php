@@ -2,9 +2,9 @@
 @section('podcast-home')
     <div class="container">
         <div class="row">
-            <div class="col-lg-8">
+            <div class="col-xl-8">
                 
-                <form action="">
+                <form action="" style="padding-bottom: 8px">
                     <div class="d-flex">
                         <div class="form-group has-search">
                             <span class="fa fa-search form-control-feedback"></span>
@@ -16,10 +16,10 @@
 
                 <section class="mobile_flex">
                     <div class="audio_section">
-                        <div class="d-flex justify-content-between label_bg">
+                        <a href="#" class="d-flex justify-content-between label_bg">
                             <h3 class="national">জাতীয়</h3>
                             <img src="image/d_post.png" alt="">
-                        </div>
+                        </a>
 
                         <section class="hide">
                             <a href="{{"detail"}}" class="d-flex align-items-center bg_color">
@@ -82,18 +82,18 @@
                                 </div>
                             </a>
 
-                            <a href="" class="text-center" style="color:#10586F; font-weight: bold; font-size: 20px; padding:10px;">
-                                <u>আরও শুনুন...</u>
+                            <a href="#" class="text-center" style="color:#10586F; font-weight: bold; font-size: 20px; padding: 0px 10px 10px 10px;">
+                                <p style="display:inline-block; border-bottom:2px solid #10586F;">আরও শুনুন...</p>
                             </a>
                         </section>
                     </div>
 
 
                     <div class="audio_section mt-3">
-                        <div class="d-flex justify-content-between label_bg_two">
+                        <a href="#" class="d-flex justify-content-between label_bg_two">
                             <label class="national">রাজনীতি</label>
                             <img src="image/d_post.png" alt="">
-                        </div>
+                        </a>
                         
                         <section class="hide">
                             <a href="{{"detail"}}" class="d-flex align-items-center bg_color">
@@ -156,16 +156,15 @@
                                 </div>
                             </a>
 
-                            <a href="" class="text-center" style="color:#10586F; font-weight: bold; font-size: 20px; padding:10px;">
-                                <u>আরও শুনুন...</u>
+                            <a href="" class="text-center" style="color:#10586F; font-weight: bold; font-size: 20px; padding: 0px 10px 10px 10px;">
+                                <p style="display:inline-block; border-bottom:2px solid #10586F;">আরও শুনুন...</p>
                             </a>
                         </section>
                     </div>
                 </section>
-
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-xl-4">
                 <p class="text-right right_head">সর্বশেষ পডকাস্ট</p>
 
                 <a href="{{"detail"}}" class="d-flex align-items-center bg_color_small">

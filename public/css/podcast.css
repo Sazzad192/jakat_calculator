@@ -27,6 +27,8 @@
 
     .has-search .form-control-feedback {
         position: absolute;
+        font-size: 20px;
+        font-weight: bold;
         z-index: 2;
         display: block;
         width: 2.375rem;
@@ -42,6 +44,13 @@
         height: 44px;
         border-radius: 30px;
         padding: 6px 77px;
+    }
+
+    .search_input::placeholder{
+        line-height: 2.375rem !important;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: start;
     }
     
     .search_button{
@@ -98,6 +107,8 @@
     .bg_color_small img{
         height: 117px !important;
         width: 117px !important;
+        object-fit: cover;
+        border-radius: 15px;
         padding: 8px;
     }
     .bg_color_small .flex-grow-1{
@@ -106,7 +117,7 @@
     }
 
     .bg_color{
-        margin-top: 15px;
+        margin: 10px;
         border-radius: 10px;
         background-color: #FFFFFF;
     }
@@ -131,6 +142,9 @@
         font-size: 10px;
     }
     
+    #player-container{
+        margin-right: 19px;
+    }
 
     #player-container #play-pause {
         border-radius: 30px;
@@ -174,6 +188,9 @@
     }
     .padding{
         margin-top: 40px !important;
+    }
+    .form-group {
+        margin-bottom: 0rem !important;
     }
     
     .form-control:focus {
@@ -223,9 +240,6 @@
             margin-left: -30%;
         }
 
-        .search_button{
-            display: none;
-        }
         .has-search{
             width: 100%;
         }
@@ -264,11 +278,10 @@
             border-radius: 0px !important;
             background: #eaeaea;
             margin: 0px !important;
-            width: 75%;
         }
     }
 
-    @media (min-width:601px) and (max-width:994px){
+    @media (min-width:601px) and (max-width:1201px){
         .position {
             padding-top: 60px;
         }
@@ -295,9 +308,6 @@
             font-size: 25px;
         }
 
-        .search_button{
-            display: none;
-        }
         .has-search{
             width: 100%;
         }

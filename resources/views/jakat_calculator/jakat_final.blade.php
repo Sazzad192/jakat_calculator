@@ -220,6 +220,7 @@
                     </div>
                 </div> 
             </div>
+
             <div class="container pt-2">
                 <div class="row justify-content-center">
                     <div class="col-lg-12">
@@ -231,258 +232,255 @@
                             </div>
                         </div>
 
-                        <div class="row main-part">
-                            <div class="col-lg-12">
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-9">
-                                        <form class="print_form jakat-box"  id="selectforms">
-                                            <div class="text-left common_font pt-2"> সম্পদ </div> <hr class="hr-color">
-        
-                                            <div class="form-group row">
-                                                <label for="gold" class="col-lg-6 col-form-label text-right">স্বর্ণের মূল্য:</label>
-                                                  <input type="number" class=" col-lg-6 form-control text-left" id="gold">
-                                            </div>
+                        <div class="row justify-content-center main-part">
+                            <div class="col-lg-9">
 
-                                            <div class="form-group row">
-                                                <label for="rupa_price" class="col-lg-6 col-form-label text-right">রূপার মূল্য:</label>
-                                                  <input type="number" class=" col-lg-6 form-control text-left" id="rupa_price">
-                                            </div>
+                                <form class="print_form jakat-box"  id="selectforms">
+                                    <div class="text-left common_font pt-2"> সম্পদ </div> <hr class="hr-color">
 
-                                            <div class="form-group row">
-                                                <label for="nagad_money" class="col-lg-6 col-form-label text-right">নগদ টাকা:</label>
-                                                  <input type="number" class=" col-lg-6 form-control text-left" id="nagad_money">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="gold" class="col-lg-6 col-form-label text-right">স্বর্ণের মূল্য:</label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="gold">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="my_asset_others" class="col-lg-6 col-form-label text-right">কারো কাছে গচ্ছিত আমানত</label>
-                                                  <input type="number" class=" col-lg-6 form-control text-left" id="my_asset_others">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="rupa_price" class="col-lg-6 col-form-label text-right">রূপার মূল্য:</label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="rupa_price">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="my_asset_others_lone" class="col-lg-6 col-form-label text-right">অন্যের কাছে পাওনা টাকা <i class="fa fa-info-circle" data-toggle="tooltip" data-bs-placement="top" title="যা পাওয়া নিশ্চিত বা পাওয়ার আশা আছে।" ></i></label>
-                                                <input type="number" class="col-lg-6 form-control text-left" id="my_asset_others_lone">
-                                            </div>
-                                            
-                                            <div class="form-group row">
-                                                <label for="security_money" class="col-lg-6 col-form-label text-right">ফেরৎযোগ্য সিকিউরিটি মানি <i class="fa fa-info-circle" data-toggle="tooltip" title="যা সম্পূর্ণ ফেরৎযোগ্য; অ্যাডভান্স হিসেবে অফেরৎযোগ্য অগ্রিম ভাড়া নয়।" ></i></label>
-                                                  <input type="number" class=" col-lg-6 form-control text-left" id="security_money">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="nagad_money" class="col-lg-6 col-form-label text-right">নগদ টাকা:</label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="nagad_money">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="forign_money" class="col-lg-6 col-form-label text-right">বৈদেশিক মুদ্রা <i class="fa fa-info-circle" data-toggle="tooltip" title="বর্তমান এক্সচেঞ্জ রেট হিসাব করে।"></i></label>
-                                                  <input type="number" class= "col-lg-6 form-control text-left" id="forign_money">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="my_asset_others" class="col-lg-6 col-form-label text-right">কারো কাছে গচ্ছিত আমানত</label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="my_asset_others">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="bank_money" class="col-lg-6 col-form-label text-right">ব্যাংক একাউন্টে জমাকৃত টাকা <i class="fa fa-info-circle" data-toggle="tooltip" title="কারেন্ট ও সেভিংস অ্যাকাউন্ট, ফিক্সড ডিপোজিট, ডিপিএস, এফডিআর ইত্যাদি যাবতীয় অ্যাকাউন্টে নিজের জমাকৃত ব্যালেন্স। অতিরিক্ত ইন্টারেস্ট পুরোটাই সদকা করা জরুরী।"></i></label>
-                                                  <input type="number" class=" col-lg-6 form-control text-left" id="bank_money">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="my_asset_others_lone" class="col-lg-6 col-form-label text-right">অন্যের কাছে পাওনা টাকা <i class="fa fa-info-circle" data-toggle="tooltip" data-bs-placement="top" title="যা পাওয়া নিশ্চিত বা পাওয়ার আশা আছে।" ></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="my_asset_others_lone">
+                                    </div>
+                                    
+                                    <div class="form-group row">
+                                        <label for="security_money" class="col-lg-6 col-form-label text-right">ফেরৎযোগ্য সিকিউরিটি মানি <i class="fa fa-info-circle" data-toggle="tooltip" title="যা সম্পূর্ণ ফেরৎযোগ্য; অ্যাডভান্স হিসেবে অফেরৎযোগ্য অগ্রিম ভাড়া নয়।" ></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="security_money">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="special_money" class="col-lg-6 col-form-label text-right">বিশেষ উদ্দেশ্যে জমা টাকা <i class="fa fa-info-circle" data-toggle="tooltip" title="হজ, বিয়ে ইত্যাদির জন্য নিজের জমাকৃত টাকা।"></i></label>
-                                                  <input type="number" class=" col-lg-6 form-control text-left" id="special_money">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="forign_money" class="col-lg-6 col-form-label text-right">বৈদেশিক মুদ্রা <i class="fa fa-info-circle" data-toggle="tooltip" title="বর্তমান এক্সচেঞ্জ রেট হিসাব করে।"></i></label>
+                                        <input type="number" class= "col-lg-6 form-control text-left" id="forign_money">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="selary_money" class="col-lg-6 col-form-label text-right">স্যালারি একাউন্টে জমা টাকা <i class="fa fa-info-circle" data-toggle="tooltip" title="সাধারণ মাসিক খরচের অতিরিক্ত জমা থাকলে সে টাকা।"></i></label>
-                                                  <input type="number" class=" col-lg-6 form-control text-left" id="selary_money">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="bank_money" class="col-lg-6 col-form-label text-right">ব্যাংক একাউন্টে জমাকৃত টাকা <i class="fa fa-info-circle" data-toggle="tooltip" title="কারেন্ট ও সেভিংস অ্যাকাউন্ট, ফিক্সড ডিপোজিট, ডিপিএস, এফডিআর ইত্যাদি যাবতীয় অ্যাকাউন্টে নিজের জমাকৃত ব্যালেন্স। অতিরিক্ত ইন্টারেস্ট পুরোটাই সদকা করা জরুরী।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="bank_money">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="bank_money_geranty" class="col-lg-6 col-form-label text-right">ব্যাংক গ্যারান্টি মানি <i class="fa fa-info-circle" data-toggle="tooltip" title="নিজের জমাকৃত টাকা। অতিরিক্ত ইন্টারেস্ট পুরোটাই সদকা করা জরুরী।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="bank_money_geranty">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="special_money" class="col-lg-6 col-form-label text-right">বিশেষ উদ্দেশ্যে জমা টাকা <i class="fa fa-info-circle" data-toggle="tooltip" title="হজ, বিয়ে ইত্যাদির জন্য নিজের জমাকৃত টাকা।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="special_money">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="bima_money" class="col-lg-6 col-form-label text-right">বীমায় জমাকৃত প্রিমিয়াম <i class="fa fa-info-circle" data-toggle="tooltip" title="নিজের জমাকৃত প্রিমিয়াম। অতিরিক্ত পুরোটাই সদকা করা জরুরী।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="bima_money">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="selary_money" class="col-lg-6 col-form-label text-right">স্যালারি একাউন্টে জমা টাকা <i class="fa fa-info-circle" data-toggle="tooltip" title="সাধারণ মাসিক খরচের অতিরিক্ত জমা থাকলে সে টাকা।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="selary_money">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="bond_money" class="col-lg-6 col-form-label text-right">বন্ড, ট্রেজারী বিল, সঞ্চয়পত্র <i class="fa fa-info-circle" data-toggle="tooltip" title="ক্রয় মূল্য। অতিরিক্ত পুরোটাই সদকা করা জরুরী।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="bond_money">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="bank_money_geranty" class="col-lg-6 col-form-label text-right">ব্যাংক গ্যারান্টি মানি <i class="fa fa-info-circle" data-toggle="tooltip" title="নিজের জমাকৃত টাকা। অতিরিক্ত ইন্টারেস্ট পুরোটাই সদকা করা জরুরী।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="bank_money_geranty">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="provident_fund" class="col-lg-6 col-form-label text-right">প্রভিডেন্ট ফান্ড <i class="fa fa-info-circle" data-toggle="tooltip" title="যদি ঐচ্ছিক হয়, বাধ্যতামূলক কেটে রাখা অংশের বিগত বছরের যাকাত দিতে হবে না। টাকা হস্তগত হওয়ার পর থেকে হিসাব শুরু হবে।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="provident_fund">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="bima_money" class="col-lg-6 col-form-label text-right">বীমায় জমাকৃত প্রিমিয়াম <i class="fa fa-info-circle" data-toggle="tooltip" title="নিজের জমাকৃত প্রিমিয়াম। অতিরিক্ত পুরোটাই সদকা করা জরুরী।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="bima_money">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="company_share" class="col-lg-6 col-form-label text-right">কোম্পানির শেয়ার (ডিভিডেন্ট) <i class="fa fa-info-circle" data-toggle="tooltip" title="কোম্পানি থেকে ডিভিডেন্ড পাওয়ার উদ্দেশ্যে ক্রয়কৃত। ব্যালেন্স শিট দেখে নিজের অংশে বিদ্যমান যাকাতযোগ্য সম্পদ।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="company_share">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="bond_money" class="col-lg-6 col-form-label text-right">বন্ড, ট্রেজারী বিল, সঞ্চয়পত্র <i class="fa fa-info-circle" data-toggle="tooltip" title="ক্রয় মূল্য। অতিরিক্ত পুরোটাই সদকা করা জরুরী।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="bond_money">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="company_share_capital" class="col-lg-6 col-form-label text-right">কোম্পানির শেয়ার (ক্যাপিটাল গেইন) <i class="fa fa-info-circle" data-toggle="tooltip" title="ক্যাপিটাল গেইন তথা সেকেন্ডারি মার্কেটে ব্যবসার উদ্দেশ্যে ক্রয়কৃত (বর্তমান বাজারদর হিসাবে)।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="company_share_capital">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="provident_fund" class="col-lg-6 col-form-label text-right">প্রভিডেন্ট ফান্ড <i class="fa fa-info-circle" data-toggle="tooltip" title="যদি ঐচ্ছিক হয়, বাধ্যতামূলক কেটে রাখা অংশের বিগত বছরের যাকাত দিতে হবে না। টাকা হস্তগত হওয়ার পর থেকে হিসাব শুরু হবে।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="provident_fund">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="some_shonchoy_money" class="col-lg-6 col-form-label text-right">সমিতিতে সঞ্চিত নগদ টাকা <i class="fa fa-info-circle" data-toggle="tooltip" title="নিজের জমাকৃত টাকা।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="some_shonchoy_money">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="company_share" class="col-lg-6 col-form-label text-right">কোম্পানির শেয়ার (ডিভিডেন্ট) <i class="fa fa-info-circle" data-toggle="tooltip" title="কোম্পানি থেকে ডিভিডেন্ড পাওয়ার উদ্দেশ্যে ক্রয়কৃত। ব্যালেন্স শিট দেখে নিজের অংশে বিদ্যমান যাকাতযোগ্য সম্পদ।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="company_share">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="invest_money" class="col-lg-6 col-form-label text-right">ব্যবসায় বিনিয়োগকৃত টাকা <i class="fa fa-info-circle" data-toggle="tooltip" title="নিজের অংশে বিদ্যমান যাকাতযোগ্য সম্পদ।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="invest_money">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="company_share_capital" class="col-lg-6 col-form-label text-right">কোম্পানির শেয়ার (ক্যাপিটাল গেইন) <i class="fa fa-info-circle" data-toggle="tooltip" title="ক্যাপিটাল গেইন তথা সেকেন্ডারি মার্কেটে ব্যবসার উদ্দেশ্যে ক্রয়কৃত (বর্তমান বাজারদর হিসাবে)।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="company_share_capital">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="lone_money" class="col-lg-6 col-form-label text-right">ব্যবসায়িক পণ্যের বকেয়া মূল্য <i class="fa fa-info-circle" data-toggle="tooltip" title="যা পাওয়া নিশ্চিত বা পাওয়ার আশা আছে।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="lone_money">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="some_shonchoy_money" class="col-lg-6 col-form-label text-right">সমিতিতে সঞ্চিত নগদ টাকা <i class="fa fa-info-circle" data-toggle="tooltip" title="নিজের জমাকৃত টাকা।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="some_shonchoy_money">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="invest_money" class="col-6 col-lg-6 col-form-label text-right">ব্যবসায় বিনিয়োগকৃত টাকা <i class="fa fa-info-circle" data-toggle="tooltip" title="নিজের অংশে বিদ্যমান যাকাতযোগ্য সম্পদ।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="invest_money">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="invest_money" class="col-lg-6 col-form-label text-right">ব্যবসায় বিনিয়োগকৃত টাকা <i class="fa fa-info-circle" data-toggle="tooltip" title="নিজের অংশে বিদ্যমান যাকাতযোগ্য সম্পদ।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="invest_money">
+                                    </div>
 
-                                            <div class="row">
-                                                <div class="d-flex col-lg-12 justify-content-center py-2" >
-                                                    <div class="text-right col-lg-6 label-front">মোট:</div>
-                                                    <div type="number" class="input-front-result text-left col-lg-6" id="jakat_asset_result"></div>
-                                                </div>
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="lone_money" class="col-lg-6 col-form-label text-right">ব্যবসায়িক পণ্যের বকেয়া মূল্য <i class="fa fa-info-circle" data-toggle="tooltip" title="যা পাওয়া নিশ্চিত বা পাওয়ার আশা আছে।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="lone_money">
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="invest_money" class="col-lg-6 col-form-label text-right">ব্যবসায় বিনিয়োগকৃত টাকা <i class="fa fa-info-circle" data-toggle="tooltip" title="নিজের অংশে বিদ্যমান যাকাতযোগ্য সম্পদ।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="invest_money">
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="d-flex col-lg-12 justify-content-center py-2" >
+                                            <div class="text-right col-lg-6 label-front">মোট:</div>
+                                            <div type="number" class="input-front-result text-left col-lg-6" id="jakat_asset_result"></div>
+                                        </div>
+                                    </div>
 
 
-                                            <div class="text-left common_font label-front business-asset">ব্যবসায়িক সম্পদ</div> <hr class="hr-color">
+                                    <div class="text-left common_font label-front business-asset">ব্যবসায়িক সম্পদ</div> <hr class="hr-color">
 
-                                            <div class="form-group row">
-                                                <label for="business_property" class="col-lg-6 col-form-label text-right">ব্যবসার উদ্দেশ্যে ক্রয়কৃত জমি <i class="fa fa-info-circle" data-toggle="tooltip" title="যা কেনা হয়েছে বিক্রির নিয়তে। বর্তমান বিক্রয় মূল্য অনুসারে।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="business_property">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="business_property" class="col-lg-6 col-form-label text-right">ব্যবসার উদ্দেশ্যে ক্রয়কৃত জমি <i class="fa fa-info-circle" data-toggle="tooltip" title="যা কেনা হয়েছে বিক্রির নিয়তে। বর্তমান বিক্রয় মূল্য অনুসারে।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="business_property">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="business_house" class="col-lg-6 col-form-label text-right">ব্যবসার উদ্দেশ্যে ক্রয়কৃত ফ্ল্যাট, বাড়ি <i class="fa fa-info-circle" data-toggle="tooltip" title="যা কেনা হয়েছে বিক্রির নিয়তে, ভাড়ায় প্রদত্ত ফ্ল্যাট বা বাড়ি নয়। বর্তমান বিক্রয় মূল্য অনুসারে।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="business_house">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="business_house" class="col-lg-6 col-form-label text-right">ব্যবসার উদ্দেশ্যে ক্রয়কৃত ফ্ল্যাট, বাড়ি <i class="fa fa-info-circle" data-toggle="tooltip" title="যা কেনা হয়েছে বিক্রির নিয়তে, ভাড়ায় প্রদত্ত ফ্ল্যাট বা বাড়ি নয়। বর্তমান বিক্রয় মূল্য অনুসারে।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="business_house">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="business_car" class="col-lg-6 col-form-label text-right">ব্যবসার গাড়ি <i class="fa fa-info-circle" data-toggle="tooltip" title="যা কেনা হয়েছে বিক্রির নিয়তে, ভাড়ায় চালিত গাড়ি নয়। বর্তমান বিক্রয় মূল্য।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="business_car">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="business_car" class="col-lg-6 col-form-label text-right">ব্যবসার গাড়ি <i class="fa fa-info-circle" data-toggle="tooltip" title="যা কেনা হয়েছে বিক্রির নিয়তে, ভাড়ায় চালিত গাড়ি নয়। বর্তমান বিক্রয় মূল্য।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="business_car">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="company_business" class="col-lg-6 col-form-label text-right">কোম্পানির বিক্রয়যোগ্য ব্যবসায়িক পণ্য</label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="company_business">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="company_business" class="col-lg-6 col-form-label text-right">কোম্পানির বিক্রয়যোগ্য ব্যবসায়িক পণ্য</label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="company_business">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="all_business_sell" class="col-lg-6 col-form-label text-right">সকল ব্যবসার বিক্রয়যোগ্য পণ্য</label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="all_business_sell">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="all_business_sell" class="col-lg-6 col-form-label text-right">সকল ব্যবসার বিক্রয়যোগ্য পণ্য</label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="all_business_sell">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="business_raw_products" class="col-lg-6 col-form-label text-right">ব্যবসায়িক পণ্য তৈরির মজুদ কাঁচামাল</label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="business_raw_products">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="business_raw_products" class="col-lg-6 col-form-label text-right">ব্যবসায়িক পণ্য তৈরির মজুদ কাঁচামাল</label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="business_raw_products">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="business_animal" class="col-lg-6 col-form-label text-right">ব্যবসার জন্য ক্রয়কৃত পশু-প্রাণী</label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="business_animal">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="business_animal" class="col-lg-6 col-form-label text-right">ব্যবসার জন্য ক্রয়কৃত পশু-প্রাণী</label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="business_animal">
+                                    </div>
 
-                                            <div class="row d-flex justify-content-start py-2" >
-                                                <div class="text-right col-lg-6 label-front">মোট:</div>
-                                                <div class="input-front-result text-left col-lg-6" id="business_result"></p></div>
-                                            </div>
+                                    <div class="row d-flex justify-content-start py-2" >
+                                        <div class="text-right col-lg-6 label-front">মোট:</div>
+                                        <div class="input-front-result text-left col-lg-6" id="business_result"></p></div>
+                                    </div>
 
-                                            <div class="text-left common_font label-front">যাকাতের সম্পদ থেকে বিয়োগযোগ্য ঋণ</div> <hr class="hr-color">
+                                    <div class="text-left common_font label-front">যাকাতের সম্পদ থেকে বিয়োগযোগ্য ঋণ</div> <hr class="hr-color">
 
-                                            <div class="form-group row">
-                                                <label for="house_loan" class="col-lg-6 col-form-label text-right">সাংসারিক প্রয়োজনে গৃহীত ঋণ</label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="house_loan">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="house_loan" class="col-lg-6 col-form-label text-right">সাংসারিক প্রয়োজনে গৃহীত ঋণ</label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="house_loan">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="personal_loan" class="col-lg-6 col-form-label text-right">ব্যক্তিগত পর্যায়ের সকল ঋণ</label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="personal_loan">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="personal_loan" class="col-lg-6 col-form-label text-right">ব্যক্তিগত পর্যায়ের সকল ঋণ</label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="personal_loan">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="business_loan" class="col-lg-6 col-form-label text-right">ব্যবসার সকল ঋণ <i class="fa fa-info-circle" data-toggle="tooltip" title="এমন ব্যবসার সকল ঋণ যার উপর নিজের এবং সংসারের খরচ নির্ভরশীল।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="business_loan">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="business_loan" class="col-lg-6 col-form-label text-right">ব্যবসার সকল ঋণ <i class="fa fa-info-circle" data-toggle="tooltip" title="এমন ব্যবসার সকল ঋণ যার উপর নিজের এবং সংসারের খরচ নির্ভরশীল।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="business_loan">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="rent_tax" class="col-lg-6 col-form-label text-right">বকেয়া বাড়ি ভাড়া, ইউটিলিটি বিল, ট্যাক্স</label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="rent_tax">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="rent_tax" class="col-lg-6 col-form-label text-right">বকেয়া বাড়ি ভাড়া, ইউটিলিটি বিল, ট্যাক্স</label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="rent_tax">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="staff_salaray" class="col-lg-6 col-form-label text-right">কর্মচারীর বকেয়া বেতন-ভাতা <i class="fa fa-info-circle" data-toggle="tooltip" title="যাকাত বর্ষের ভেতরের বকেয়া কর্মচারীর বেতন-ভাতা।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="staff_salaray">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="staff_salaray" class="col-lg-6 col-form-label text-right">কর্মচারীর বকেয়া বেতন-ভাতা <i class="fa fa-info-circle" data-toggle="tooltip" title="যাকাত বর্ষের ভেতরের বকেয়া কর্মচারীর বেতন-ভাতা।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="staff_salaray">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="transactions_loan" class="col-lg-6 col-form-label text-right">ব্যবসায়িক লেনদেনের ঋণ <i class="fa fa-info-circle" data-toggle="tooltip" title="পণ্য ক্রয় বা ভাড়া বাবদ কোনো ব্যক্তি বা প্রতিষ্ঠান যা পাবে।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="transactions_loan">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="transactions_loan" class="col-lg-6 col-form-label text-right">ব্যবসায়িক লেনদেনের ঋণ <i class="fa fa-info-circle" data-toggle="tooltip" title="পণ্য ক্রয় বা ভাড়া বাবদ কোনো ব্যক্তি বা প্রতিষ্ঠান যা পাবে।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="transactions_loan">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="development_loan" class="col-lg-6 col-form-label text-right">ডেভেলপমেন্ট ঋণ <i class="fa fa-info-circle" data-toggle="tooltip" title="ডেভেলপমেন্ট ঋনের যে অংশ যাকাতযোগ্য সম্পদ ক্রয়ের পেছনে ব্যয় হয়েছে।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="development_loan">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="development_loan" class="col-lg-6 col-form-label text-right">ডেভেলপমেন্ট ঋণ <i class="fa fa-info-circle" data-toggle="tooltip" title="ডেভেলপমেন্ট ঋনের যে অংশ যাকাতযোগ্য সম্পদ ক্রয়ের পেছনে ব্যয় হয়েছে।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="development_loan">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="installment_loan" class="col-lg-6 col-form-label text-right">কিস্তিতে প্রদেয় মেয়াদি ঋণ <i class="fa fa-info-circle" data-toggle="tooltip" title="কিস্তিতে প্রদেয় মেয়াদি ঋণের যতটুকু এক বছরে পরিশোধ করতে হবে।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="installment_loan">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="installment_loan" class="col-lg-6 col-form-label text-right">কিস্তিতে প্রদেয় মেয়াদি ঋণ <i class="fa fa-info-circle" data-toggle="tooltip" title="কিস্তিতে প্রদেয় মেয়াদি ঋণের যতটুকু এক বছরে পরিশোধ করতে হবে।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="installment_loan">
+                                    </div>
 
-                                            <div class="form-group row">
-                                                <label for="wife_loan" class="col-lg-6 col-form-label text-right">স্ত্রীর মোহর <i class="fa fa-info-circle" data-toggle="tooltip" title="যদি তা এই যাকাত বর্ষে আদায়ের নিয়ত করে; নতুবা নয়।"></i></label>
-                                                <input type="number" class=" col-lg-6 form-control text-left" id="wife_loan">
-                                            </div>
+                                    <div class="form-group row">
+                                        <label for="wife_loan" class="col-lg-6 col-form-label text-right">স্ত্রীর মোহর <i class="fa fa-info-circle" data-toggle="tooltip" title="যদি তা এই যাকাত বর্ষে আদায়ের নিয়ত করে; নতুবা নয়।"></i></label>
+                                        <input type="number" class="col-lg-6 form-control text-left" id="wife_loan">
+                                    </div>
 
-                                            <div class=" row d-flex justify-content-start pt-2 pb-4" >
-                                                <div class="text-right col-lg-6 label-front">মোট:</div>
-                                                <div type="number" class="input-front-result text-left col-lg-6" id="subtract_result"></p></div>
-                                            </div>
-                                        </form>
+                                    <div class="row d-flex justify-content-start pt-2 pb-4" >
+                                        <div class="text-right col-lg-6 label-front">মোট:</div>
+                                        <div type="number" class="input-front-result text-left col-lg-6" id="subtract_result"></p></div>
+                                    </div>
+                                </form>
 
-                                        <div class="d-flex justify-content-start pb-1 two-button">
-                                            <div class="col-lg-6 text-right">
-                                                <button class="btn btn-danger button-group" id="button" onclick="resetForms()"> রিসেট করুন </button>
-                                            </div>
+                                <div class="d-flex justify-content-start pb-1 two-button">
+                                    <div class="col-lg-6 text-right">
+                                        <button class="btn btn-danger button-group" id="button" onclick="resetForms()"> রিসেট করুন </button>
+                                    </div>
 
-                                            <div class="col-lg-6 text-left">
-                                                <button style="background: #048C63" class="btn btn-success button-group" onclick="calc();">হিসাব করুন</button>
-                                            </div>
+                                    <div class="col-lg-6 text-left">
+                                        <button style="background: #048C63" class="btn btn-success button-group" onclick="calc();">হিসাব করুন</button>
+                                    </div>
+                                </div>
+
+                                <form action="" id="form_two">
+                                    <div class="d-flex justify-content-start pt-5 pb-2" >
+                                        <div class="text-right col-lg-6 label-front">মোট যাকাতযোগ্য সম্পদ:</div>
+                                        <div type="number" class="input-front-result text-left col-lg-6" id="final_jakat_asset_result"></p></div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-start pt-4 pb-2" >
+                                        <div class="text-right col-lg-6 label-front ">মোট যাকাতযোগ্য ব্যবসায়িক সম্পদ:</div>
+                                        <div type="number" class="input-front-result text-left col-lg-6" id="final_business_result"></p></div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-start py-4" >
+                                        <div class="text-right col-lg-6 label-front">যাকাত থেকে বিয়োগযোগ্য সম্পদ:</div>
+                                        <div type="number" class="input-front-result text-left col-lg-6" id="final_subtract_result"></p></div>
+                                    </div>
+                                </form>
+
+                                <div style="margin: 0px;" class="row justify-content-center">
+                                    <div class="col-md-6" id="form_three">
+                                        <div class="form-group row" id="therd_form">
+                                            <label class="col-lg-6 col-form-label nishab-box text-right">মোট যাকাতের পরিমাণ:</label>
+                                            <label class="col-lg-6 form-control text-left nishab-box-two" id="final_jakat_result"></label>
                                         </div>
 
-                                        <form action="" id="form_two">
-                                            <div class="d-flex justify-content-start pt-5 pb-2" >
-                                                <div class="text-right col-lg-6 label-front">মোট যাকাতযোগ্য সম্পদ:</div>
-                                                <div type="number" class="input-front-result text-left col-lg-6" id="final_jakat_asset_result"></p></div>
-                                            </div>
-
-                                            <div class="d-flex justify-content-start pt-4 pb-2" >
-                                                <div class="text-right col-lg-6 label-front ">মোট যাকাতযোগ্য ব্যবসায়িক সম্পদ:</div>
-                                                <div type="number" class="input-front-result text-left col-lg-6" id="final_business_result"></p></div>
-                                            </div>
-
-
-                                            <div class="d-flex justify-content-start py-4" >
-                                                <div class="text-right col-lg-6 label-front">যাকাত থেকে বিয়োগযোগ্য সম্পদ:</div>
-                                                <div type="number" class="input-front-result text-left col-lg-6" id="final_subtract_result"></p></div>
-                                            </div>
-                                        </form>
-
-                                        <div style="margin: 0px;" class="row justify-content-center">
-                                            <div class="col-md-6" id="form_three">
-                                                <div class="form-group row" id="therd_form">
-                                                    <label class="col-lg-6 col-form-label nishab-box text-right">মোট যাকাতের পরিমাণ:</label>
-                                                    <label class="col-lg-6 form-control text-left nishab-box-two" id="final_jakat_result"></label>
-                                                </div>
-
-                                                <div class="row">
-                                                    <button class=" btn button-group text-center mb-4 pdf-button" onclick="print();">পিডিএফ ডাউনলোড করুন</button>
-                                                </div>
-                                            </div>
+                                        <div class="row">
+                                            <button class="btn button-group text-center mb-4 pdf-button" onclick="print();">পিডিএফ ডাউনলোড করুন</button>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </div>
@@ -521,7 +519,7 @@
                 line-height: 1.5;
             }
             .jakat-calculator-bg{
-                background-image: url(image/BG.png);
+                background-image: url(image/jakat/BG.png);
                 background-repeat: no-repeat;
                 background-position: top;
                 background-size: cover;
