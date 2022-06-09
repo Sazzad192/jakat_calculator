@@ -188,5 +188,11 @@
                 margin-right: 10px;
             }
         }
+
+        @media (min-width:601px) and (max-width:1201px){
+            .audio_section {
+                background: #F5F5F5 !important;
+            }
+        }
     </style>
 @endsection

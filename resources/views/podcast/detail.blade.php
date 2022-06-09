@@ -412,9 +412,6 @@
 
                                 <div id="click" class="repeat-track" onclick="shareTrack()">
                                     <i class="fas fa-share-alt fa-1x"></i>
-                                    {{-- <a href=""> <i class="fab fa-facebook"></i> </a>
-                                    <a href=""> <i class="fab fa-twitter"></i> </a>
-                                    <a href=""><i class="fab fa-whatsapp"></i></a> --}}
                                 </div>
 
                                 {{-- <div class="sticky_share_btn">
@@ -519,6 +516,8 @@
         jQuery(".sticky_share_btn").click(function(){
           jQuery(".listing").fadeToggle(600);
         });
+
+        
     </script>
 
     <style>

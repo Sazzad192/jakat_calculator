@@ -13,17 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
-
 Route::get('/', function () {
-    return view('audio');
+    return view('welcome');
 });
 
 Route::get('/jakat','JakatController@index');
 
 // Route::get('/podcast-home','PodcastController@index');
+Route::get('/data','CategoryController@index');
 Route::get('/podcast','PodcastController@index');
 Route::get('/archive','PodcastController@archive');
 Route::get('/detail','PodcastController@detail');
